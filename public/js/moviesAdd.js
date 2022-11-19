@@ -7,6 +7,14 @@ window.onload = function(){
     article.classList.add('fondoTransparente');
     formulario.classList.add('fondoCRUD');
 
-
+    /* En moviesAdd.ejs, establecer que, cada vez que se pase el mouse por el título
+'AGREGAR PELÍCULA', este cambie su color.
+ */
+    titulo.addEventListener("mouseover", () => {
+        titulo.classList.toggle("botonBorrar")
+    })
+    titulo.addEventListener("mouseout", () => {
+        titulo.classList.toggle("botonBorrar")
+    })
 
 }
